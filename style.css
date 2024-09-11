@@ -269,19 +269,30 @@ body {
 
 /* Batch Students Styles */
 
-.batch-container{
+.batch-container {
     width: 80%;
     float: right;
     margin: 10px 15px 10px 10px;
+    height: 50vh;
+    background: #fff;
+    border: 1px solid #2c0404;
+    border-radius: 15px 15px;
+    overflow: hidden;
 }
 
 .batch-container .StickyHeader {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     justify-content: flex-start;
     background-color: #fff;
     border-radius: 15px 15px 0 0;
     padding: 10px 20px;
+    overflow: auto;
 }
 
 .batch-container .StickyHeader .left {
@@ -301,4 +312,57 @@ body {
     font-size: 25px;
     font-weight: 700;
     color: rgb(103, 172, 236);
+}
+
+.navsHeader {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px ;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0, 110, 255), #53baf5);
+    padding: 10px;
+}
+
+.navsHeader li {
+    color: #fff;
+    font-weight: 500;
+}
+
+.studentsInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: inherit;
+    overflow: auto;
+    /* gap: 10px; */
+}
+
+/* ::-webkit-scrollbar{
+    width: 5px;
+    } */
+.studentsInfo ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 95%;
+}
+
+.studentsInfo::-webkit-scrollbar {
+    width: 10px;
+}
+
+.studentsInfo::-webkit-scrollbar-thumb {
+    background-color: #53baf5;
+}
+
+.studentsInfo::-webkit-scrollbar-track {
+    background-color: gray;
+}
+
+ul li:last-child{
+    background-color: #53baf5;
+    padding: 10px;
+    border-radius: 5px;
 }
